@@ -9,10 +9,12 @@ This repo is a **git submodule** of `docker-mise-cluster` at path `george/`.
 ```bash
 # from cluster root
 git submodule update --init --recursive
-bin/setup
-bin/compose up george
+task setup                 # or bin/setup
+task up:george             # or bin/compose up george
 # via nginx: http://localhost:8080/george/
 ```
+
+In this app directory, `task setup` / `task server` wrap bundle + Rails (Task pinned in `mise.toml`).
 
 Development expects the cluster Postgres/Redis services (`DATABASE_URL`, `REDIS_URL`) when run under compose.
 
