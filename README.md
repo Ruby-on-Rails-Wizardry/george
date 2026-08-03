@@ -30,7 +30,7 @@ mise install
 # build base if needed
 task setup
 task shell
-task compose:up   # http://localhost:3001
+task compose:up   # http://localhost:3004
 ```
 
 ### Production image (no mise)
